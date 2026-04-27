@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulačka PC sestavy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Kalkulačka rozpočtu PC sestavy</h1>
+
+<div class="container">
+    <label>CPU: <input type="number" id="cpu"></label>
+    <label>Základní deska: <input type="number" id="mb"></label>
+    <label>RAM: <input type="number" id="ram"></label>
+    <label>SSD: <input type="number" id="ssd"></label>
+    <label>Zdroj: <input type="number" id="psu"></label>
+    <label>Skříň: <input type="number" id="case"></label>
+    <label>Grafická karta: <input type="number" id="gpu"></label>
+
+    <h3>Typ sestavy:</h3>
+    <select id="budgetType">
+        <option value="15000">Kancelářská (15 000 Kč)</option>
+        <option value="35000">Herní/Grafická (35 000 Kč)</option>
+    </select>
+
+    <button onclick="spocitat()">Spočítat</button>
+
+    <div id="vysledek"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
